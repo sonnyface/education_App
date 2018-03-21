@@ -1,0 +1,106 @@
+@import "main.scss";
+
+// 我的课程
+.kecheng,.kecheng02{
+    padding:0 0.5rem;
+    h6{
+        line-height:1.5rem;
+        font-size:0.55rem;
+        color:#1ca3ed;
+        text-align:left;
+        font-weight: 100;
+    }
+    .jiqiao{
+        width:100%;
+        li{
+            @include flexBox;
+            padding:0.25rem;
+            border:1px solid #e7ebee;
+            border-radius:0.2rem;
+            padding-right:0;
+            margin-bottom:0.5rem;
+        }
+        .left{
+            width:3.25rem;
+            height:3.25rem;
+            img{
+                width:3.25rem;
+                height:3.25rem;
+            }
+        }
+        .right{
+            @include flex(1);
+            padding-left:1.25rem;
+                .one{
+                    line-height:1rem;
+                    .ke{
+                        width:1.075rem;
+                        height:0.975rem; 
+                    } 
+                    span{
+                        font-size:0.55rem;
+                        color:#57b1f6;
+                        display:inline-block;
+                        line-height:1rem;
+                    }
+                    p{
+                        display:inline-block;
+                        color:#333333;
+                        font-size:0.65rem;
+                    }
+                }
+                .two{
+                    line-height:1.0rem;
+                    .time{
+                        width:0.7rem;
+                        height:0.7rem;
+                    }
+                    p{
+                        display:inline-block;
+                        font-size:0.45rem;
+                        color:#999999;
+                    }
+                }
+                .three{
+                    line-height:1.0rem;
+                    justify-content: space-between;
+                    @include flexBox;
+                    .num{
+                        img{
+                            width:0.65rem;
+                            height:0.7rem; 
+                        }
+                        span{
+                            color:#ff1313;
+                        }
+                        p{
+                            display:inline-block;
+                            font-size:0.45rem;
+                            color:#999999;
+                        }
+                    }
+                    .money{
+                        color:#ff0000;
+                        font-size:0.55rem;
+                        width:2.5rem;
+                        height:100%;
+                        background:#def6fa;
+                        padding:0 0.25rem;
+                    }
+                }
+                
+                img{
+                    display: inline-block; 
+                    vertical-align: middle;
+                }
+                
+                
+        }
+    }
+}
+.classBox{
+	width:100%;
+	height:0.25rem;
+	background:#dff1ff;
+	margin-top:0.5rem;
+}

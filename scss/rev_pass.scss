@@ -1,0 +1,34 @@
+@import "main.scss";
+
+.x_biao{
+    width:100%;
+    li{
+        width:100%;
+        padding:0.4rem 0.6rem;
+        box-sizing:border-box;
+        border-bottom:1px solid #dedede;
+        input{
+            width:100%;
+            border:none;
+            display:block;
+            font-size:0.65rem;
+            outline:none;
+            padding:0;
+            line-height:1.25rem;
+        }
+    }
+}
+.x_btn1{
+        width:10.0rem;
+        line-height:1.5rem;
+        background:#1fb8ff;
+        text-align:center;
+        color:#fff;
+        font-size:0.65rem;
+        border-radius:0.25rem;
+        position:fixed;
+        bottom:2.5rem;
+        left:0;
+        right:0;
+        margin:auto;
+    }

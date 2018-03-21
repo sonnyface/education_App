@@ -1,0 +1,245 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-22 11:34:45
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-24 16:14:46
+*/
+@import  "main.scss";
+
+.video{
+	width:100%;
+	height:12.0rem;
+	position: relative;
+	.mint-header{
+		background:rgba(255,255,255,0);
+		z-index: 10;
+	}
+	.player{
+		width:100%;
+		height:10.5rem;
+		position: absolute;
+		left:0;
+		top:0;		
+	}
+	.playNum{
+		position: absolute;
+		left:0;
+		background-color: #fff;
+		top:10.5rem;		
+		width:100%;
+		height:1.5rem;
+		box-sizing:border-box;
+		padding:0 0.6rem;
+		@include flexBox;
+		line-height: 1.5rem;
+		font-size: 0.65rem;
+		.left{
+			@include flex(1);
+			color:#000;
+
+		}
+		.right{			
+			height:100%;
+			width:4.3rem;
+			font-size: 0.6rem;
+			color:#999;
+			margin-left:0.5rem;
+			@include flexBox;
+			@include flexCenter;
+			img{
+				width:0.8rem;
+				height:0.5rem;
+				padding-right:0.25rem;	
+			}
+		}
+	}
+
+}
+.video_bottom{
+	width:100%;
+	box-sizing:border-box;
+	padding:0 0.6rem;
+	@include flexBox;
+	font-size:0.6rem;
+	height:1rem;
+	line-height: 1rem;
+	div{		
+		width:1.75rem;
+		height:100%;
+		background:#ff9f39;
+		color:#fff;
+		font-size:0.6rem;
+		border-radius:0.25rem;
+		text-align: center;
+		line-height: 1rem;
+		margin-right:0.25rem;
+	}
+}
+
+// 课程简介
+
+.content{
+	width:100%;
+	margin-top: 1.175rem;
+	
+	.coll_top{
+		width:100%;
+		height:1.1rem;		
+		font-size:0.6rem;
+		color:#1fb8fe;
+		box-sizing:border-box;
+		padding:0 0.6rem;
+		@include flexBox;	
+		border-bottom: 1px solid #ddd;
+		line-height: 1.1rem;	
+		align-items:center;
+		-webkit-box-align:center;
+		.topleft{
+			@include flex(1);
+			font-size: 0.75rem;
+			color:#333;	
+			img{
+				width:0.1rem;
+				height:0.725rem;
+			}	
+		}
+		.topright{
+			width:2.0rem;
+			height:100%;
+			@include flexCenter;
+			img{
+				width:0.875rem;
+				height:0.875rem;
+				padding-right:0.25rem;
+			}
+		}
+	}
+	.coll_top.coll_top02{
+		border-bottom: none;
+	}
+	.kongbox{
+		width:1100%;
+		background:#dff1ff;
+		height:0.25rem;
+
+	}
+	.coll_uls{
+		width:100%;
+		margin:0.5rem 0;
+		@include flexBox;
+		box-sizing:border-box;
+		padding:0 0.6rem;
+		li{
+			padding:0.1rem 0.2rem;
+			font-size:0.6rem;
+			border:1px solid #24b9ff;
+			border-radius: 0.2rem;
+			margin-right:0.375rem;
+		}
+		.active{
+			background:#24b9ff;
+			color:#fff;
+		}
+	}
+	// 老师列表
+	.teacherlis{
+		width:100%;
+		box-sizing:border-box;
+		padding:0 0.6rem;
+		.teachTop{
+			width:100%;
+			height:3.25rem;
+			margin-top:1.2rem;
+			@include flexBox;
+			line-height: 0.9rem;
+			.teachLeft{
+				width:2.2rem;
+				height:100%;
+				text-align: center;
+				font-size:0.6rem;
+				color:#444;
+				img{
+					width:2.2rem;
+					height:2.2rem;
+					border-radius: 2.2rem;
+				}
+				p{
+					padding:0;
+				}
+			}
+			.teachRight{
+				@include flex(1);	
+				font-size:0.6rem;	
+				margin-left:0.5rem;	
+				p{				
+					color:#1fb8fe;
+					line-height: 1.0rem;
+					span{
+						color:#000;
+					}
+				}
+				p:nth-of-type(2){
+					color:#444;
+					word-break:break-all;
+					text-overflow:ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient:vertical;
+					-webkit-line-clamp:2;
+					overflow: hidden;				
+				}
+			}
+		}
+		.teachBtm{
+			width:100%;
+			height:0.9rem;
+			@include flex-center;
+			img{
+				width:0.85rem;
+				height:0.45rem;
+			}
+		}
+	}
+
+	// 列表
+	.lie{
+		padding:0;
+		.lie_li{
+			padding:0.3rem 0.6rem;
+			border-bottom:0.05rem solid #dadada;
+			@include flexBox;
+			img{
+				width:2.2rem;
+				height:2.2rem;
+				border-radius:50%;
+			}
+			.name{
+				@include flex(1);
+				padding-left:0.3rem;
+				.ming{
+					font-size:0.6rem;
+					color:#1fb8ff;
+					line-height:1.1rem;
+				}
+				.ma{
+					font-size:0.6rem;
+					color:#444;
+					line-height:0.9rem;	
+					word-break: break-all;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					overflow: hidden;
+				}
+				.datatime{
+					text-align: right;
+					width:100%;
+					font-size:0.6rem;
+					color:#bbb;
+					line-height: 1rem;
+				}
+			}
+		}
+	}
+}
+

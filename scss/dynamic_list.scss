@@ -1,0 +1,97 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-23 15:33:19
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-23 16:10:14
+*/
+@import "main.scss";
+
+.list{
+	
+	li{
+		@include flexBox;
+		padding:0.5rem 0;
+		border-bottom:0.25rem solid #dff1ff;
+		padding:0.6rem;
+		.left{
+			width:3.0rem;
+			img{
+				width:3.0rem;
+				height:3.0rem;
+			}
+		}
+		.right{
+			@include flex(1);
+			padding-left:0.3rem;
+			.biao{
+				line-height:1.2rem;
+				font-size:0.6rem;
+				color:#00a1e9;
+				padding-left:0.25rem;
+				font-weight:800;
+			}
+			p{
+				font-size:0.6rem;
+				color:#444444;
+				line-height:1.2rem;
+				display: block;
+			}
+			.teachBox{
+				width:100%;			
+				border:1px solid #ddd;
+				border-radius: 0.3rem;
+				box-shadow: 0.15rem 0.15rem 0.3rem #ddd;
+				dl{
+					width:100%;
+					height:2.0rem;  
+					@include flexBox;		
+
+					dt{
+						margin-left:0.5rem; 
+						@include flexBox;
+						line-height: 2.0rem;
+						align-items:center;
+						-webkit-box-align:center;
+						img{
+							width:1.0rem;
+							height:1.0rem;					
+						}
+						span{
+							font-size:0.6rem;
+							color:#444; 
+							padding-left: 0.25rem;
+							i{
+								color:#f21421;
+							}
+						}
+					}
+				}
+
+			}
+        // 时间
+        .time{
+        	@include flexBox;
+        	line-height:1.5rem;
+        	font-size:0.6rem;
+        	color:#888888;
+        	justify-content:space-between;
+        	-webkit-box-pack:space-between;
+        	margin-top:0.2rem;
+
+        	div{
+        		line-height:1.25rem;
+        		img{
+        			width:0.8rem;
+        			height:0.725rem;
+        			display: inline-block;
+        			vertical-align: middle;
+        		}
+        		span{
+        			color:#1fb8ff;
+        		}
+        	}
+        }
+   
+    }
+}
+}

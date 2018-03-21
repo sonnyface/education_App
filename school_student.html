@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="full-screen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<title>好前景</title>
+	<link rel="stylesheet" type="text/css" href="jslib/swiper/css/swiper-3.4.1.min.css"/>		
+	<!--<link rel="shorcut icon" type="image/x-icon" href="https://s1.ricebook.com/feck/bentopod/fav.ico">-->
+	<style type="text/css">
+
+	/*样式重置*/
+	article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+	body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, figure, section, legend, textarea, p, blockquote, th, td, input, select, textarea, button { margin: 0; padding: 0 }
+	fieldset, img { border: 0 none }
+	body{font:14px/1.4 "Microsoft Yahei",Arial,Helvetica,sans-serif;background-color: #fff;color:#333;margin: 0 auto;}
+	h1,h2,h3,h4,h5,h6{font-size:100%;font-weight: normal;}
+	table{border-collapse:collapse;border-spacing:0}
+	ul,ol,dd,dt,dl{list-style-type:none;}
+	a{color:#333;text-decoration: none;-webkit-touch-callout: none;-webkit-user-select: none;}
+	a,input,select{-webkit-tap-highlight-color: transparent;-webkit-appearance: none;-moz-appearance: none;-webkit-border-radius: 0;}
+
+	input,img{border:none;}
+	i,em{font-style:normal;}
+	:focus{outline: none}
+	select{ background: none }
+	/*原子类*/
+	.clear { clear: both; }
+	.clear:after { display: block; clear: both; visibility: hidden; height: 0; overflow: hidden; content: "."; }
+	.fl { float: left; }
+	.fr { float: right; }
+	.mb10{margin-bottom: 10px;}
+	.mt10{margin-top: 10px;}
+	/*placeholder css*/
+	::-moz-placeholder{ font-family: "Microsoft YaHei"}
+	::-webkit-input-placeholder{ font-family: "Microsoft YaHei"}
+	:-ms-input-placeholder{ font-family: "Microsoft YaHei"}
+	body{ background-color: #f9f9f9;}
+	.mint-header{background: #00aaee;}
+
+	/*首页样式*/
+	body{
+		width: 100%;
+		height: 100%;
+		background: url('http://oxwr9o25z.bkt.clouddn.com/home.png')  no-repeat left top ;		
+		background-size: 100%;
+	}
+	.pageOne{
+		width: 100%;		
+	}
+	.pageLogo{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding-top: 4.375rem;
+	}
+	.pageLogo img{
+		width: 5.6rem;
+		height: 5.6rem;
+	}
+	.pageStage{
+		width: 100%;	
+		margin-top:1.5rem;		
+	}
+	.pageStage li{
+		width: 100%;
+		height:5.35rem;
+		display: flex;
+		display: -webkit-box;
+		-webkit-box-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		align-items: center;
+		margin-bottom: 0.5rem;
+	}
+	.pagelis{
+		display: block;	
+		width: 5.25rem;
+		height:100%;
+		font-size: 0.75rem;
+		color: #fff;		
+		position: relative;		
+		text-align: center;
+		
+	}
+	.pagelis img{
+		width: 5.25rem;
+		height: 5.25rem;
+		display: block;
+	}
+	.pagelis span{		
+		display: block;
+		margin-top: -0.5rem;
+	}
+
+</style>
+</head>
+
+<body>
+		<div class="pageOne" >
+		<div class="pageLogo">
+			<img src="http://oxwr9o25z.bkt.clouddn.com/logo.png" alt="">
+		</div>
+
+		<ul class="pageStage">
+			<li>
+				<a href="logo.html?id=1" class="pagelis">
+					<img src="http://oxwr9o25z.bkt.clouddn.com/student.png" alt="">
+					<span>学生</span>
+				</a>
+			</li>
+			<li>				
+				<a href="logo.html?id=2" class="pagelis">
+					<img src="http://oxwr9o25z.bkt.clouddn.com/teach.png" alt="">
+					<span>教师</span>
+				</a>
+			</li>
+			<li>
+				<a href="logo.html?id=3" class="pagelis">
+					<img src="http://oxwr9o25z.bkt.clouddn.com/agency.png" alt="">
+					<span>代理</span>
+				</a>
+			</li>	
+		</ul>
+	</div>
+	
+</body>	
+<!-- <script type="text/javascript" src="jquery-1.11.3.min.js"></script> -->
+<script src="jslib/zepto/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/touch/touch.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/swiper/js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>	 
+<script  type="text/javascript" charset="utf-8">
+	window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function() {
+		function c() {
+			var d = document.documentElement;
+			var cw = d.clientWidth || 750;
+			d.style.fontSize = (20 * (cw / 375)) > 40 ? 40 + 'px' : (20 * (cw / 375)) + 'px';
+		}
+		c();
+		return c;
+	})(), false);
+
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="full-screen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<title>好前景</title>
+	<link rel="stylesheet" type="text/css" href="jslib/swiper/css/swiper-3.4.1.min.css"/>		
+	<link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+</head>
+
+<body>
+	<div id="app_teacher">
+		<v-app></v-app>
+	</div>
+</body>	
+<!-- <script type="text/javascript" src="jquery-1.11.3.min.js"></script> -->
+<script src="jslib/zepto/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/touch/touch.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/swiper/js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>	 
+<script src="bundle_teacher.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script src="https://unpkg.com/mint-ui/lib/index.js"></script> -->
+<script  type="text/javascript" charset="utf-8">
+	window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function() {
+		function c() {
+			var d = document.documentElement;
+			var cw = d.clientWidth || 750;
+			d.style.fontSize = (20 * (cw / 375)) > 40 ? 40 + 'px' : (20 * (cw / 375)) + 'px';
+		}
+		c();
+		return c;
+	})(), false);
+</script>
+</html>

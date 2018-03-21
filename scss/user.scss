@@ -1,0 +1,45 @@
+@import "main.scss";
+
+.center{
+	width:100%;
+	padding:0 0.6rem;
+	box-sizing:border-box;
+	li{
+		@include flexBox;
+		margin-top:0.5rem;
+		.left{
+			width:2.5rem;
+			min-height:5.0rem;
+            text-align:center;
+			img{
+				width:1.5rem;
+				height:1.5rem;
+				margin-top:1.75rem;
+			}
+			p{
+				font-size:0.6rem;
+				color:#838383;
+			}
+		}
+	}
+	.right{
+		@include flex(1);
+		.time{
+			color:#838383;
+			font-size:0.55rem;
+			display:inline-block;
+			padding:0.2rem 0.5rem;
+			background:#f4f4f4;
+			border-radius:0.75rem;
+			margin-bottom:0.25rem;
+		}
+		.zi{
+			line-height:1.5rem;
+			font-size:0.6rem;
+			color:#838383;
+			border:1px solid #e8e8e8;
+			border-radius:0.25rem;
+			padding:0.5rem;
+		}
+	}
+}

@@ -1,0 +1,129 @@
+@import "main.scss";
+
+.mint-header-button.is-right{
+  height:100%;
+  img{
+    width:1.125rem;
+    height:1.0rem;
+      margin-top:0.7rem;
+  }
+}
+
+.list{
+  
+    li{
+      @include flexBox;
+      padding:0.5rem 0;
+      border-bottom:0.25rem solid #dff1ff;
+      padding:0.6rem;
+      .left{
+        width:3.0rem;
+        img{
+          width:3.0rem;
+          height:3.0rem;
+        }
+      }
+      .right{
+        @include flex(1);
+        padding-left:0.3rem;
+        .biao{
+          line-height:1.5rem;
+          font-size:0.6rem;
+          color:#00a1e9;
+        }
+        p{
+          font-size:0.6rem;
+          color:#444444;
+          line-height:1.0rem;
+        }
+        .tuji.tujiBox{
+          box-shadow: 0 0 0.375rem  #ddd;
+          box-sizing:border-box;
+          padding:0.25rem;
+        }
+        .tuji{
+          width:100%;
+          @include flexBox;
+          justify-content:space-between;
+          -webkit-box-pack:space-between;
+          flex-wrap: wrap;
+
+          .tujiImg{
+            width:3.75rem;
+            height:3.75rem;
+            border-radius: 0.375rem;           
+          }
+          img{
+            margin-bottom:0!important;
+          }
+          .tujiVideo{            
+            @include flex(1);
+            @include flex-center;
+
+            h4{
+              font-size:0.65rem;
+              color:#444;
+            }
+            div{
+              font-size:0.6rem;
+              color:#999;
+              height: 1.5rem;
+              @include flexBox;
+              align-items:center;             
+              -webkit-box-align:center;              
+              img{
+                width:0.75rem;
+                height:0.75rem;
+              }
+              span{
+                display: block;
+              }
+            }
+
+          }
+        }
+        // 时间
+        .time{
+          @include flexBox;
+          line-height:1.25rem;
+          font-size:0.6rem;
+          color:#888888;
+          justify-content:space-between;
+          div{
+            line-height:1.25rem;
+            img{
+              width:0.8rem;
+              height:0.725rem;
+              display: inline-block;
+              vertical-align: middle;
+            }
+            span{
+              color:#1fb8ff;
+            }
+          }
+        }
+        // 评论列表
+        .ping_list{
+          background:#f6f6f6;
+          .hui{
+            @include flexBox;
+            line-height:1.1rem;
+            img{
+              width:1.0rem;
+              height:1.0rem;
+              padding:0.15rem;
+            }
+            .laoshi{
+              font-size:0.55rem;
+              color:#444444;
+              width:20%;
+              text-align:center;
+            }
+            p{
+              line-height:1.1rem;
+            }
+          }
+        }
+      }
+    }
+}
